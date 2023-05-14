@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="MyFirstDatabase" Class="MyFirstDatabaseDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=PAULSLAPTOP\SQLEXPRESS;Initial Catalog=MyFirstDatabase;Integrated Security=True" SettingsObjectName="SQLStartingProject.Properties.Settings" SettingsPropertyName="MyFirstDatabaseConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Averages" Member="Averages">
+    <Type Name="Average">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="StudentID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SubjectID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Average" Member="Average1" Type="System.Decimal" DbType="Decimal(5,2)" CanBeNull="true" />
+      <Column Name="Created" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Modified" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="Average_Grade" Member="Grades" ThisKey="ID" OtherKey="AverageID" Type="Grade" />
+      <Association Name="Student_Average" Member="Student" ThisKey="StudentID" OtherKey="ID" Type="Student" IsForeignKey="true" />
+      <Association Name="Subject_Average" Member="Subject" ThisKey="SubjectID" OtherKey="ID" Type="Subject" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Grades" Member="Grades">
+    <Type Name="Grade">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AverageID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Grade" Member="Grade1" Type="System.Decimal" DbType="Decimal(5,2)" CanBeNull="true" />
+      <Column Name="IsExam" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Created" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Modified" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Average_Grade" Member="Average" ThisKey="AverageID" OtherKey="ID" Type="Average" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Students" Member="Students">
+    <Type Name="Student">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CNP" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Sex" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Created" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Modified" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FriendID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Student_Average" Member="Averages" ThisKey="ID" OtherKey="StudentID" Type="Average" />
+      <Association Name="Student_Student" Member="Student2" ThisKey="ID" OtherKey="ID" Type="Student" Cardinality="One" />
+      <Association Name="Student_Student" Member="Student1" ThisKey="ID" OtherKey="ID" Type="Student" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Subjects" Member="Subjects">
+    <Type Name="Subject">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="HasExam" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Created" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Modified" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Subject_Average" Member="Averages" ThisKey="ID" OtherKey="SubjectID" Type="Average" />
+    </Type>
+  </Table>
+</Database>

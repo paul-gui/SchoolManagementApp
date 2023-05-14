@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>Despre</value>
+  </data>
+  <data name="Active" xml:space="preserve">
+    <value>Activ</value>
+  </data>
+  <data name="AddEdit" xml:space="preserve">
+    <value>Adaugă/Editează</value>
+  </data>
+  <data name="AddEditGrade" xml:space="preserve">
+    <value>Adaugă/Editează Notă</value>
+  </data>
+  <data name="AddUser" xml:space="preserve">
+    <value>Adaugă utilizator...</value>
+  </data>
+  <data name="AdminDeletionQuestionStudents" xml:space="preserve">
+    <value>Sunteți sigur(ă)? Toate notele pentru acest elev vor fi sterse permanent!</value>
+  </data>
+  <data name="AdminDeletionQuestionSubjects" xml:space="preserve">
+    <value>Sunteți sigur(ă)? Toate notele pentru această materie vor fi șterse permanent!</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>TOATE</value>
+  </data>
+  <data name="AllFieldsStatement" xml:space="preserve">
+    <value>Toate câmpurile trebuie completate!</value>
+  </data>
+  <data name="Average" xml:space="preserve">
+    <value>Medie</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Anulare</value>
+  </data>
+  <data name="ChangeLaguageStatement" xml:space="preserve">
+    <value>Pentru a schimba limba va trebui să te loghezi din nou!</value>
+  </data>
+  <data name="CNP" xml:space="preserve">
+    <value>CNP</value>
+  </data>
+  <data name="CNPErrorStatement" xml:space="preserve">
+    <value>Introduceți numai cifre!</value>
+  </data>
+  <data name="Company" xml:space="preserve">
+    <value>Realizat de Paul Gui</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>Confirmare</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Șterge</value>
+  </data>
+  <data name="Deletion" xml:space="preserve">
+    <value>Ștergere</value>
+  </data>
+  <data name="DeletionQuestionStudents" xml:space="preserve">
+    <value>Sunteți sigur(ă)? Toate notele pentru acest elev vor fi sterse!</value>
+  </data>
+  <data name="DeletionQuestionSubjects" xml:space="preserve">
+    <value>Sunteți sigur(ă)? Toate notele pentru această materie vor fi șterse!</value>
+  </data>
+  <data name="DescriptionStatement" xml:space="preserve">
+    <value>Această aplicație ajută la administrarea studenților, a materiilor și a notelor și face calcularea mediilor mai ușoară.</value>
+  </data>
+  <data name="EmptyUsernamePasswordStatement" xml:space="preserve">
+    <value>Introduceți numele de utilizator și parola!</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>Engleză</value>
+  </data>
+  <data name="ExamExistsStatement" xml:space="preserve">
+    <value>Teză deja înregistrată!</value>
+  </data>
+  <data name="ExceptionMessage" xml:space="preserve">
+    <value>Am întâmpinat o eroare. Contactați administratorul aplicatiei pentru ajutor(Secțiunea "Despre").</value>
+  </data>
+  <data name="FirstName" xml:space="preserve">
+    <value>Prenume</value>
+  </data>
+  <data name="GeneralAverage" xml:space="preserve">
+    <value>Medie Generală</value>
+  </data>
+  <data name="Grade" xml:space="preserve">
+    <value>Notă</value>
+  </data>
+  <data name="GradeAddedStatement" xml:space="preserve">
+    <value>Notă adăugată cu succes!</value>
+  </data>
+  <data name="GradeEditedStatement" xml:space="preserve">
+    <value>Notă editată cu succes!</value>
+  </data>
+  <data name="Grades" xml:space="preserve">
+    <value>Note</value>
+  </data>
+  <data name="HasExam" xml:space="preserve">
+    <value>Are Teză</value>
+  </data>
+  <data name="IncorrectCredentialsStatement" xml:space="preserve">
+    <value>Nume utilizator sau parolă incorecte!</value>
+  </data>
+  <data name="IsExam" xml:space="preserve">
+    <value>Este teză</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Limbă</value>
+  </data>
+  <data name="LastName" xml:space="preserve">
+    <value>Nume</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Logare</value>
+  </data>
+  <data name="LogOut" xml:space="preserve">
+    <value>Deconectare</value>
+  </data>
+  <data name="NullPasswordStatement" xml:space="preserve">
+    <value>Introduceți parola!</value>
+  </data>
+  <data name="NullUsernamePasswordStatement" xml:space="preserve">
+    <value>Numele de utilizator sau parola nu pot fi goale!</value>
+  </data>
+  <data name="NullUsernameStatement" xml:space="preserve">
+    <value>Introduceți numele de utilizator!</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Parolă</value>
+  </data>
+  <data name="Restoration" xml:space="preserve">
+    <value>Recuperare</value>
+  </data>
+  <data name="RestorationQuestion" xml:space="preserve">
+    <value>Doriți să recuperați această înregistrare?</value>
+  </data>
+  <data name="Restore" xml:space="preserve">
+    <value>Recuperează</value>
+  </data>
+  <data name="Romanian" xml:space="preserve">
+    <value>Română</value>
+  </data>
+  <data name="RowEditStatement" xml:space="preserve">
+    <value>Intrare editată cu succes!</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Salvează</value>
+  </data>
+  <data name="SchoolManagementApp" xml:space="preserve">
+    <value>School Management App</value>
+  </data>
+  <data name="SelectGradeStatement" xml:space="preserve">
+    <value>Selectați o notă!</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Setări</value>
+  </data>
+  <data name="Sex" xml:space="preserve">
+    <value>Sex</value>
+  </data>
+  <data name="Student" xml:space="preserve">
+    <value>Student</value>
+  </data>
+  <data name="StudentAddedStatement" xml:space="preserve">
+    <value>Student adăugat cu succes: </value>
+  </data>
+  <data name="Students" xml:space="preserve">
+    <value>Studenți</value>
+  </data>
+  <data name="Subject" xml:space="preserve">
+    <value>Materie</value>
+  </data>
+  <data name="SubjectAddedStatement" xml:space="preserve">
+    <value>Materie adăugată cu succes: </value>
+  </data>
+  <data name="SubjectName" xml:space="preserve">
+    <value>Nume Materie</value>
+  </data>
+  <data name="Subjects" xml:space="preserve">
+    <value>Materii</value>
+  </data>
+  <data name="UncheckHasExamStatement" xml:space="preserve">
+    <value>Debifează căsuțele 'Este Teză' în secțiunea 'Note' înainte să debifezi căsuța 'Are teză'!</value>
+  </data>
+  <data name="UserAddedStatement" xml:space="preserve">
+    <value>Utilizator adăugat cu succes.</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>Nume utilizator</value>
+  </data>
+  <data name="UsernamePasswordStatement" xml:space="preserve">
+    <value>Numele de utlizator și parola trebuie să fie ambele mai lungi de 3 caractere!</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>Versiune</value>
+  </data>
+</root>

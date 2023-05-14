@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="MyFirstDatabase">
+  <DataContextMoniker Name="/MyFirstDatabaseDataContext" />
+  <nestedChildShapes>
+    <classShape Id="8f752987-2319-43bd-acae-75df1d5488b4" absoluteBounds="3.5, 1.25, 2, 2.0671105957031255">
+      <DataClassMoniker Name="/MyFirstDatabaseDataContext/Average" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d4d1a259-4662-4183-a363-54bc7eeb0b44" absoluteBounds="3.515, 1.71, 1.9700000000000002, 1.507110595703125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="66c8e29b-cff5-4e20-b21d-e07de7e0ac5e" absoluteBounds="6.25, 1.125, 2, 2.2732670084635416">
+      <DataClassMoniker Name="/MyFirstDatabaseDataContext/Grade" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fb6a48d4-753a-471d-8a69-ae7481a21c4f" absoluteBounds="6.265, 1.585, 1.9700000000000002, 1.7132670084635415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8564b9c1-f0dc-4d57-a57c-c5501c74f5b0" absoluteBounds="0.75, 1, 2, 2.6855798339843755">
+      <DataClassMoniker Name="/MyFirstDatabaseDataContext/Student" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9b87096e-b099-43a1-8f31-42de9aa198f6" absoluteBounds="0.765, 1.46, 1.9700000000000002, 2.125579833984375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="77cd4c7e-8e7f-4ac9-9095-a5a5ba25cf93" absoluteBounds="0.75, 5.25, 2, 2.0671105957031255">
+      <DataClassMoniker Name="/MyFirstDatabaseDataContext/Subject" />
+      <nestedChildShapes>
+        <elementListCompartment Id="009a3cb7-716a-4b4d-9995-d34b83b9b258" absoluteBounds="0.765, 5.71, 1.9700000000000002, 1.507110595703125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 2.28355529785156); (6.25 : 2.28355529785156)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MyFirstDatabaseDataContext/Average/Average_Grade" />
+      <nodes>
+        <classShapeMoniker Id="8f752987-2319-43bd-acae-75df1d5488b4" />
+        <classShapeMoniker Id="66c8e29b-cff5-4e20-b21d-e07de7e0ac5e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 2.28355529785156); (3.5 : 2.28355529785156)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MyFirstDatabaseDataContext/Student/Student_Average" />
+      <nodes>
+        <classShapeMoniker Id="8564b9c1-f0dc-4d57-a57c-c5501c74f5b0" />
+        <classShapeMoniker Id="8f752987-2319-43bd-acae-75df1d5488b4" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.45923076923077 : 3.68557983398438); (1.45923076923077 : 3.93557983398438); (2.05461538461538 : 3.93557983398438); (2.05461538461538 : 3.68557983398438)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/MyFirstDatabaseDataContext/Student/Student_Student" />
+      <nodes>
+        <classShapeMoniker Id="8564b9c1-f0dc-4d57-a57c-c5501c74f5b0" />
+        <classShapeMoniker Id="8564b9c1-f0dc-4d57-a57c-c5501c74f5b0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 6.28355529785156); (4.5 : 6.28355529785156); (4.5 : 3.31711059570313)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MyFirstDatabaseDataContext/Subject/Subject_Average" />
+      <nodes>
+        <classShapeMoniker Id="77cd4c7e-8e7f-4ac9-9095-a5a5ba25cf93" />
+        <classShapeMoniker Id="8f752987-2319-43bd-acae-75df1d5488b4" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
